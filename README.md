@@ -2,7 +2,7 @@
 
 
 ## Description
-This project showcases an end-to-end ETL pipeline using SQL Server Intergation Services (SSIS) that extracts, transforms, and loads data from an OLTP database into a star schema data warehouse.  To efficiently track changes, an incremental load mechanism is built, and business reporting is done using a Power BI dashboard.
+This project showcases an end-to-end ETL pipeline using SQL Server Integration Services (SSIS) that extracts, transforms, and loads data from an OLTP database into a star schema data warehouse.  To efficiently track changes, an incremental load mechanism is built, and business reporting is done using a Power BI dashboard.
 
 ## Tech Stack
 * **SQL Server** OLTP + DWH system
@@ -15,17 +15,18 @@ This project showcases an end-to-end ETL pipeline using SQL Server Intergation S
 ## Folder Structure
 ```
 SSIS-Data-Warehouse-ETL-Pipeline/
-├── SSIS_Package/
+├── SSIS-Packages/
 │   └── Final_ETL_Package.dtsx
 ├── SQL/
 │   ├── DWH_Tables_DDL.sql
 │   ├── Dim_Date.sql
 │   └── Dim_Time.sql
-├── PowerBI/
-│   └── 
-├── Documentation/
+├── Database/
+│   └── gravity_books.sql
+│   └── Gravity_DWH.sql
+├── Reports/
 │   └── PowerBI_Screenshots/
-│       └── 
+│   └── PowerBI_Screenshots/
 └── README.md
 ```
 
@@ -91,8 +92,31 @@ SSIS-Data-Warehouse-ETL-Pipeline/
 5. **Refresh Dashboard**
    - Open the **Power BI dashboard**.
    - Refresh the dataset to view the updated data.
-
+     
 ## Notes
 - Ensure the backup files or scripts are available before starting.
 - Verify all connection strings in Visual Studio before execution.
 - Power BI refresh might take a few minutes depending on dataset size.
+
+---
+
+## Reporting
+
+### Sales Dashboard Report (2020-2023)
+Overview: The Gravity Book Library dashboard summarizes sales performance from 2020 to 2023, with total revenue of $144.47K from 1.7K customers.
+  -	Top Markets: China ($28K) and Indonesia ($20K) show strong purchasing power, reflecting high customer purchasing power.
+  -	U.S. Performance: U.S. sales reached $45.81M, but average customer spend is lower, indicating weaker purchasing power.
+  -	Demographics: The 30-34 age group is the largest segment (17.5%), driving significant sales.
+  -	Categories: Components lead sales, while clothing accessories lag, indicating underperformance.
+
+For more insights and key findings from the 2020-2023 sales dashboard, please refer to [Sales Report](Reporting-Layer)
+
+![Summary Dashboard](Reporting-Layer/Summary.jpg)
+
+![Sales Dashboard](Reporting-Layer/Sales.jpg)
+
+![Products Dashboard](Reporting-Layer/Products.jpg)
+
+![Customers Dashboard](Reporting-Layer/Customers.jpg)
+
+If you have any questions or need clarification on anything in the project, feel free to reach out! I'd be more than happy to help and would love to assist you with any queries.
