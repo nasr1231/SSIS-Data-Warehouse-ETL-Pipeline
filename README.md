@@ -5,19 +5,14 @@
 1. [Description](#description)  
 2. [Tech Stack](#tech-stack)  
 3. [Folder Structure](#folder-structure)  
-4. [🛋️ Project Architecture](#️-project-architecture)  
-   - [Source (OLTP)](#source-normalized-oltp-gravity-books)  
-   - [SSIS ETL Process](#ssis-etl-process)  
-   - [Snowflake Schema Design](#snowflake-schema-design)  
-   - [Power BI Dashboard](#power-bi-dashboard)  
+4. [Project Architecture](#project-architecture)  
 5. [How to Run the Project](#how-to-run-the-project)  
 6. [Notes](#notes)  
 7. [SSIS ETL Structure](#ssis-etl-structure)  
    - [1️⃣ Source (Extract)](#1️⃣-source-extract)  
    - [2️⃣ Transformations](#2️⃣-transformations)  
    - [3️⃣ Destination (Load)](#3️⃣-destination-load)  
-8. [Examples](#examples)  
-   - [Fact_Sales fact Data Flow](#factsales-fact-data-flow)  
+   - [Fact_Sales fact Data Flow](#fact_sales-fact-data-flow)  
    - [Shipping Methods Dimension Data Flow](#shipping-methods-dimension-data-flow)  
    - [Customer Address Bridge Table Data Flow](#customer-address-bridge-table-data-flow)  
 9. [SQL Explorations and Transformations](#sql-explorations-and-transformations)  
@@ -65,7 +60,7 @@ SSIS-Data-Warehouse-ETL-Pipeline/
 
 ---
 
-## 🛋️ Project Architecture
+## Project Architecture
 
 1. **Source**: Normalized OLTP (gravity books)  
 
@@ -97,7 +92,7 @@ SSIS-Data-Warehouse-ETL-Pipeline/
    * Fact Table: `Fact_Sales`
    * Dimension Tables: `address_customer_bridge`, `bridge_book_author`, `Dim_Authors`, `Dim_Addresses`, `Dim_Books`, `Dim_Customers`, `Dim_order_history`, `Dim_shipping_methods`, `Dim_Date`, `Dim_Time`
      ## OLAP Diagram Overview
-     ![OLAP Diagram](https://github.com/user-attachments/assets/544c50a8-3ecc-4701-a50c-43ca0d3df01f)
+     ![OLAP Diagram](https://github.com/user-attachments/assets/419c3033-0e1b-4f6b-b3c4-9b464f5c67a8)     
 
 4. **Power BI Dashboard**:
    * `Measures`: Gross Sales, Total Orders without cancelled and returned, Total Lost Sales, 
@@ -156,7 +151,7 @@ The ETL pipeline is built using **SQL Server Integration Services (SSIS)** and e
   - Structured into **Fact** and **Dimension** tables.  
   - Supports reporting tools (e.g., Power BI) for analytics and dashboarding.  
 
-## Examples
+### Examples
 
 ### Fact_Sales fact Data Flow
 ![Fact_Sales Flow](Reports/SSIS/fact_Sales.png)
