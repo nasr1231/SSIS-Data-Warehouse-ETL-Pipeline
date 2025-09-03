@@ -132,6 +132,11 @@ SSIS-Data-Warehouse-ETL-Pipeline/
 ## SSIS ETL Structure
 
 The ETL pipeline is built using **SQL Server Integration Services (SSIS)** and extracts data from an **OLTP SQL Server Database**, applies transformations to prepare it for analytical use, and loads it into a **SQL Server Data Warehouse (DWH)**.
+To ensure efficiency and avoid reloading the entire dataset each time, the pipeline uses **Incremental Loading**:
+- Only **new** or **changed** records are extracted from the OLTP system.  
+- This is achieved by checking timestamps (e.g., `status_date`) or surrogate keys to detect updates.  
+- The approach significantly reduces processing time and improves performance.  
+- Historical data is preserved in the DWH, while only deltas (changes) are applied during each ETL run. 
 
 ### 1️⃣ Source (Extract)
 - **OLTP SQL Server Database**  
