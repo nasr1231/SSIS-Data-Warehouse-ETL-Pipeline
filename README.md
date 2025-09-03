@@ -109,8 +109,6 @@ Overview: The Gravity Book Library dashboard summarizes sales performance from 2
   -	Categories: English Books lead sales, while French books lag, indicating underperformance.
   -	Financial Performance: Total sales reached $154.18K, of which $9.71K (6.3%) were lost due to cancelled or returned orders — a ratio that is within the normal      industry range and generally considered healthy.
 
-For more insights and key findings from the 2020-2023 sales dashboard, please refer to [Sales Report](Reporting-Layer)
-
 ### Business Summary Dashboard
 ![Businesss Summary Dashboard](Reports/Business-Summary.png)
 
