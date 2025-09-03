@@ -104,19 +104,26 @@ SSIS-Data-Warehouse-ETL-Pipeline/
 
 ### Sales Dashboard Report (2020-2023)
 Overview: The Gravity Book Library dashboard summarizes sales performance from 2020 to 2023, with total revenue of $144.47K from 1.7K customers.
-  -	Top Markets: China ($28K) and Indonesia ($20K) show strong purchasing power, reflecting high customer purchasing power.
-  -	U.S. Performance: U.S. sales reached $45.81M, but average customer spend is lower, indicating weaker purchasing power.
-  -	Demographics: The 30-34 age group is the largest segment (17.5%), driving significant sales.
-  -	Categories: Components lead sales, while clothing accessories lag, indicating underperformance.
+  -	Top Markets: China ($28K) and Indonesia ($20K) show strong purchasing power, reflecting high customer purchasing power.  
+  -	Demographics: East Asia leads the sales with the largest segment (44%), driving significant sales.
+  -	Categories: English Books lead sales, while French books lag, indicating underperformance.
+  -	Financial Performance: Total sales reached $154.18K, of which $9.71K (6.3%) were lost due to cancelled or returned orders — a ratio that is within the normal      industry range and generally considered healthy.
 
 For more insights and key findings from the 2020-2023 sales dashboard, please refer to [Sales Report](Reporting-Layer)
 
-![Summary Dashboard](Reporting-Layer/Summary.jpg)
+### Business Summary Dashboard
+![Businesss Summary Dashboard](Reports/Business-Summary.png)
 
-![Sales Dashboard](Reporting-Layer/Sales.jpg)
+### Books Analysis Dashboard
+![Books Dashboard](Reports/Books-Analysis.png)
 
-![Products Dashboard](Reporting-Layer/Products.jpg)
+### Customers Analysis Dashboard
+![Customers Dashboard](Reports/Customers-Analysis.png)
 
-![Customers Dashboard](Reporting-Layer/Customers.jpg)
+### Orders Lifecycle & Sales Analysis Dashboard
+![Orders Dashboard](Reports/Orders-Lifecycle.png)
+
+### Shipping Performance Analysis Dashboard
+![Shipping Dashboard](Reports/Shipping-Performance-Analysis.png)
 
 If you have any questions or need clarification on anything in the project, feel free to reach out! I'd be more than happy to help and would love to assist you with any queries.
